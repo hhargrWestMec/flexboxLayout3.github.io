@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Three</title>
+    <style>
+
+        body {
+            margin: 0px;
+            flex-direction: row;
+            display: flex;
+        }
+
+        .columnOne {
+            flex: 1;
+            background: #D7E8D4;
+            height: 100vh;
+            
+
+        }
+
+        @media ( max-width: 800px) {
+            .rowOne {
+                flex-direction: column;
+                height: 60vh;
+            }
+        }
+
+        .columnTwo {
+            display: flex;
+            flex: 5;
+            flex-direction: column;
+        }
+
+        .rowOne {
+            display: flex;
+            
+        }
+
+        header, footer {
+            height: 20vh;
+            background-color: yellowgreen;
+        }
+
+        .articleOne {
+            flex: 2;
+            height: 60vh;
+            background-color: white;
+
+        }
+        p {
+            margin: 10px;
+
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <nav class="columnOne"><p> Nav </p></nav>
+
+    <div class="columnTwo">
+        <header><p> Header </p> </header>
+            <div class="rowOne">
+                <article class="articleOne"><p> Article </p></article>
+            </div>
+        <footer><p>Footer</p></footer>
+    </div>
+</body>
+</html>
